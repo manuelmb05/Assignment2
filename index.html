@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FurniFusion - Your Modern Furniture Fusion</title>
+    <link rel="stylesheet" href="styles.css">
+    <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.3.0/model-viewer.min.js"></script>
+</head>
+
+<body>
+
+    <div class="header">
+        <img src="img/hero.png" alt="Hero Image">
+        
+        <h1>FurniFusion</h1>
+        <p>Your Modern Furniture Fusion</p>
+    </div>
+
+    <div class="product-container">
+
+        <!-- Model 1 -->
+        <div class="product-card">
+            <model-viewer src="models/silla2.glb" ar ar-modes="webxr scene-viewer quick-look" camera-controls poster="/img/silla2.png" shadow-intensity="1">
+                <div class="progress-bar hide" slot="progress-bar">
+                    <div class="update-bar"></div>
+                </div>
+                <button slot="ar-button" class="ar-button">
+                    View in your space
+                </button>
+                <div id="ar-prompt">
+                    <img src="https://modelviewer.dev/shared-assets/icons/hand.png" alt="AR Hand Icon">
+                </div>
+            </model-viewer>
+            <div class="product-details">
+                <h2>Modern Chair</h2>
+                <p class="product-description">A sleek and modern chair designed for both comfort and style. Featuring metal legs and high-quality English fabric.</p>
+            </div>
+        </div>
+
+        <!-- Model 2 -->
+        <div class="product-card">
+            <model-viewer src="models/SILLA 10.glb" ar ar-modes="webxr scene-viewer quick-look" camera-controls poster="/img/silla10.png" shadow-intensity="1">
+                <div class="progress-bar hide" slot="progress-bar">
+                    <div class="update-bar"></div>
+                </div>
+                <button slot="ar-button" class="ar-button">
+                    View in your space
+                </button>
+                <div id="ar-prompt">
+                    <img src="https://modelviewer.dev/shared-assets/icons/hand.png" alt="AR Hand Icon">
+                </div>
+            </model-viewer>
+            <div class="product-details">
+                <h2>Wooden Chair</h2>
+                <p class="product-description">Elegant wooden chair with sturdy wood legs and a comfortable seat covered in high-quality white synthetic leather.</p>
+            </div>
+        </div>
+
+        <!-- Model 3 -->
+        <div class="product-card">
+            <model-viewer src="models/SILLA 23.glb" ar ar-modes="webxr scene-viewer quick-look" camera-controls poster="/img/silla3.png" shadow-intensity="1">
+                <div class="progress-bar hide" slot="progress-bar">
+                    <div class="update-bar"></div>
+                </div>
+                <button slot="ar-button" class="ar-button">
+                    View in your space
+                </button>
+                <div id="ar-prompt">
+                    <img src="https://modelviewer.dev/shared-assets/icons/hand.png" alt="AR Hand Icon">
+                </div>
+            </model-viewer>
+            <div class="product-details">
+                <h2>Shelving Chair</h2>
+                <p class="product-description">Multi-functional chair with wooden shelving and a unique design. Upholstered in vibrant Mexican fabric.</p>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+
+</html>
